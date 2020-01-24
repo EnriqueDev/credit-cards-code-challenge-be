@@ -1,0 +1,22 @@
+{
+  "trailingComma": "all",
+  "singleQuote": true,
+  "semi": false,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": "*.(ts|tsx)",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
