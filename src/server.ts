@@ -1,10 +1,10 @@
 import App from './app'
-import ClubControler from './modules/Cards/CardsController'
+import CardsControler from './modules/Cards/CardsControler'
 import bodyParser = require('body-parser')
 
 const app = new App({
   port: 1234,
-  controllers: [new ClubControler()],
+  controllers: [new CardsControler()],
   middleware: [bodyParser.json(), bodyParser.urlencoded({ extended: true })],
 })
 app.listen()
