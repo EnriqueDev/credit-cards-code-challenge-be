@@ -5,7 +5,8 @@
   "scripts": {
     "start:dev": "nodemon dist/server.js",
     "build:dev": "tsc --watch --preserveWatchOutput",
-    "dev": "concurrently \"npm:build:dev\" \"npm:start:dev\""
+    "dev": "concurrently \"npm:build:dev\" \"npm:start:dev\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,12 @@
   "homepage": "https://github.com/EnriqueDev/totallymoney-code-challenge-be#readme",
   "devDependencies": {
     "@types/express": "^4.17.2",
+    "@types/jest": "^24.9.1",
     "@types/node": "^13.1.6",
     "concurrently": "^5.0.2",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
+    "ts-jest": "^25.0.0",
     "typescript": "^3.7.4"
   },
   "dependencies": {
