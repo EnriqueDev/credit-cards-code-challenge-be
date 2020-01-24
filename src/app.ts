@@ -22,12 +22,15 @@ export default class App {
   }
 
   private registerRoutes(controlers: IControler[]) {
+    // Centralized intialisation of controllers
+    // New routes are defined on every controller
     controlers.forEach(controler => {
       this.app.use('/', controler.router)
     })
   }
 
   public initMiddleware(middleware: Middleware[]) {
+    // Centralized  middleware intialisation
     middleware.forEach(middleware => {
       this.app.use(middleware)
     })

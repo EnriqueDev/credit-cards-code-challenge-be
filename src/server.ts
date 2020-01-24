@@ -1,5 +1,5 @@
 import App from './app'
-import ClubControler from './modules/Clubs/HomeControler'
+import ClubControler from './modules/Cards/CardsController'
 import bodyParser = require('body-parser')
 
 const app = new App({
