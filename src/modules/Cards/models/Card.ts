@@ -1,6 +1,7 @@
 type ValidatorFunc = (occupation: Occupation, annualIncome: number) => boolean
 
 type CardData = {
+  id: number
   name: string
   apr: number
   balanceTransferOfferDuration: number
@@ -24,6 +25,7 @@ export const validOccupations: Occupation[] = [
 // This was designed as a class instead of plain objects because
 // refactoring it to use an ORM like sequelize would be easier
 class Card {
+  private id: number
   // Card name
   private name: string
   // percentage
@@ -39,6 +41,7 @@ class Card {
   private validateFunc: ValidatorFunc
 
   constructor({
+    id,
     name,
     apr,
     balanceTransferOfferDuration,
@@ -46,6 +49,7 @@ class Card {
     creditAvailable,
     validateFunc,
   }: CardDataModel) {
+    this.id = id
     this.name = name
     this.apr = apr
     this.balanceTransferOfferDuration = balanceTransferOfferDuration
@@ -61,6 +65,7 @@ class Card {
   // Transforms returns a JSON to be sent to the user after the request
   public toJSON(): CardData {
     return {
+      id: this.id,
       name: this.name,
       apr: this.apr,
       balanceTransferOfferDuration: this.balanceTransferOfferDuration,

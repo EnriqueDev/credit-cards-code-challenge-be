@@ -12,6 +12,7 @@ class CardService {
     // Remember to add a validate function
     this.cards = [
       new Card({
+        id: 0,
         name: 'Student Life',
         apr: 18.9,
         balanceTransferOfferDuration: 0,
@@ -20,6 +21,7 @@ class CardService {
         validateFunc: (occupation: Occupation, _) => occupation === 'student',
       }),
       new Card({
+        id: 1,
         name: 'Anywhere Card',
         apr: 33.9,
         balanceTransferOfferDuration: 0,
@@ -28,6 +30,7 @@ class CardService {
         validateFunc: (_, __) => true,
       }),
       new Card({
+        id: 2,
         name: 'Liquid Card',
         apr: 33.9,
         balanceTransferOfferDuration: 12,
