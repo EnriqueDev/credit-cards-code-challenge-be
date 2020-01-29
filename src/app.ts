@@ -17,8 +17,8 @@ export default class App {
     this.port = appConfig.port
 
     // Initalize routes and middleware
-    this.registerRoutes(appConfig.controllers)
     this.initMiddleware(appConfig.middleware)
+    this.registerRoutes(appConfig.controllers)
   }
 
   private registerRoutes(controlers: IControler[]) {
