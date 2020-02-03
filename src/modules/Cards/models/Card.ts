@@ -13,11 +13,22 @@ interface CardDataModel extends CardData {
   validateFunc: ValidatorFunc
 }
 
-export type Occupation = 'full_time' | 'part_time' | 'student'
+export type Occupation =
+  | 'full_time'
+  | 'part_time'
+  | 'student'
+  | 'self_employed'
+  | 'homemaker'
+  | 'unemployed'
+  | 'retired'
 
 export const validOccupations: Occupation[] = [
   'full_time',
   'part_time',
+  'self_employed',
+  'homemaker',
+  'unemployed',
+  'retired',
   'student',
 ]
 
