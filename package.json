@@ -1,7 +1,7 @@
 {
-  "name": "totallymoney-code-challenge-be",
-  "version": "0.0.0",
-  "description": "Totally money code challenge",
+  "name": "credit-cards-code-challenge-be",
+  "version": "1.0.0",
+  "description": "Credit cards code challenge",
   "scripts": {
     "start:dev": "nodemon dist/server.js",
     "build:dev": "tsc --watch --preserveWatchOutput",
@@ -10,14 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnriqueDev/totallymoney-code-challenge-be.git"
+    "url": "git+https://github.com/EnriqueDev/credit-cards-code-challenge-be.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EnriqueDev/totallymoney-code-challenge-be/issues"
-  },
-  "homepage": "https://github.com/EnriqueDev/totallymoney-code-challenge-be#readme",
+  "homepage": "https://github.com/EnriqueDev/tcredit-cards-code-challenge-be#readme",
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/jest": "^24.9.1",
